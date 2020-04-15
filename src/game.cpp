@@ -14,6 +14,7 @@ bool const Game::init()
 
 	renderWindow = new RenderWindow(VideoMode(720, 480), "Pong xRockmetalx", Style::Close | Style::Titlebar);
 	renderWindow->setVerticalSyncEnabled(true);
+	renderWindow->setKeyRepeatEnabled(false);
 
 	if(!renderWindow) {
 		std::cout << "ERROR RenderWindow()." << std::endl;
